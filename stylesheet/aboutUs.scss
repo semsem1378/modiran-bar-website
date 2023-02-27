@@ -1,0 +1,80 @@
+@media only screen and (max-width: 860px) {
+    section.aboutUs {
+        div.aboutText {
+            h3 {
+                width: 80% !important;
+            }
+            p {
+                width: 80% !important;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 630px) {
+    section.aboutUs {
+        div.aboutText {
+            h3 {
+                width: 90% !important;
+            }
+            p {
+                width: 90% !important;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 460px) {
+    section.aboutUs {
+        div.aboutText {
+            padding: 1.5rem !important;
+            h3 {
+                width: 97% !important;
+            }
+            p {
+                width: 97% !important;
+            }
+        }
+    }
+}
+
+section.aboutUs {
+    background-image: url(../pic/truck3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    width: 100%;
+    min-height: 80vh;
+    height: fit-content;
+    color: white;
+    div.aboutText {
+        padding: 5rem;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(7, 6, 6, 0.521);
+        flex-direction: column !important;
+        text-align: justify;
+        h3 {
+            color: white;
+            width: 60%;
+            text-align: right;
+        }
+        p {
+            display: block;
+            text-align: justify !important;
+            width: 60%;
+        }
+    }
+}
+
+section.footer {
+    div {
+        margin: 0;
+    }
+}
+
+.flcenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

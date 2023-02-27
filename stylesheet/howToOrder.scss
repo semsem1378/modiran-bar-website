@@ -1,0 +1,156 @@
+@mixin fsa-display {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+@function tint-color($color, $weight) {
+    @return mix(white, $color, $weight);
+}
+
+@media only screen and (max-width: 1100px) {
+    div.howToOrder-body {
+        div.howToOrder-showItems {
+            width: 80%;
+        }
+        div.howToOrder-images {
+            display: none;
+        }
+    }
+}
+
+@media only screen and (max-width: 495px) {
+    section#howToOrder {
+        div.container {
+            width: 100% !important;
+            max-width: 100% !important;
+        }
+    }
+    div.howToOrder-body {
+        div.howToOrder-showItems {
+            width: 100%;
+            margin: 0 !important;
+            border-radius: 0;
+        }
+    }
+    span.circleNum {
+        width: 2rem !important;
+        height: 2rem !important;
+        div.iconNum {
+            border-width: 2px !important;
+            font-size: 1rem !important;
+        }
+    }
+}
+
+$primary-color: #e6e2d8 !default;
+$accent-color: #e6e2d8 !default;
+$secondar-color: #68190b;
+$card: #4f5e93;
+$card-second: #264653;
+section.howToOrder {
+    height: auto;
+    width: 100%;
+    video.videoPlayer {
+        width: 100%;
+        height: auto;
+    }
+    .container {
+        height: 100%;
+        h2 {
+            background-color: $secondar-color;
+            padding: 1rem;
+            color: white;
+            text-align: center;
+        }
+    }
+}
+
+.howToOrder-body {
+    @include fsa-display();
+    width: 100%;
+    height: 100%;
+    background-color: tint-color($secondar-color, 20%);
+    background-color: $primary-color;
+    .howToOrder-showItems {
+        @include fsa-display();
+        flex-direction: column;
+        width: 45%;
+        height: fit-content;
+        background-color: $primary-color;
+        background-color: white;
+        border-radius: 1rem;
+        .showItem {
+            position: relative;
+            @include fsa-display();
+            justify-content: space-between;
+            margin: 1rem;
+            width: 90%;
+            height: auto;
+            div.progressBar {
+                height: 3px;
+                width: 0%;
+                background-color: $secondar-color;
+                position: absolute;
+                bottom: 2px;
+                right: 0;
+                transition: .6s;
+                border-radius: 100%;
+            }
+            span.circleNum {
+                position: relative;
+                width: 4rem;
+                height: 4rem;
+                div.iconNum {
+                    @include fsa-display();
+                    color: $card-second;
+                    font-size: 3rem;
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    top: 0;
+                    left: 0;
+                    transform: translateX(50%);
+                    opacity: .5;
+                    border-radius: 100%;
+                    border: 5px solid $card-second;
+                    cursor: pointer;
+                }
+            }
+            div.itemInfo {
+                opacity: 0.5;
+                width: 90%;
+                height: 100%;
+            }
+        }
+    }
+    div.howToOrder-images {
+        width: 45%;
+        height: 500px;
+        img {
+            display: none;
+            width: auto;
+            max-width: 100%;
+            height: 100%;
+        }
+        img.show {
+            display: block;
+        }
+    }
+}
+
+.selected-icon {
+    transition: .5s;
+    animation: colorfill .5s forwards;
+    opacity: .9 !important;
+    border: 5px solid $secondar-color !important;
+}
+
+@keyframes colorfill {
+    0% {
+        color: $card-second;
+    }
+    100% {
+        color: $secondar-color;
+    }
+}

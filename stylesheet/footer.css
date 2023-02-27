@@ -1,0 +1,87 @@
+@media only screen and (max-width: 635px) {
+    section.footer h3 {
+        font-size: 1.3rem !important;
+    }
+    div.myContainer {
+        grid-template-columns: 1fr 1fr !important;
+    }
+    div.developerLink {
+        text-align: right !important;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    div.myContainer {
+        grid-template-columns: 1fr !important;
+    }
+    footer div {
+        text-align: center;
+    }
+    div.developerLink {
+        text-align: center !important;
+    }
+}
+
+footer {
+    width: 100%;
+    height: fit-content;
+    background-color: #e6e2d8;
+}
+
+footer h3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #68190b;
+    text-align: center;
+}
+
+footer h6 {
+    color: #68190b;
+}
+
+footer i {
+    color: #68190b !important;
+    font-size: inherit;
+    margin-left: 5px;
+}
+
+div.myContainer {
+    display: grid;
+    width: 95%;
+    height: fit-content;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0 auto 0 !important;
+    padding: 1rem 0;
+}
+
+footer p {
+    color: #264653;
+}
+
+div.myContainer>div {
+    padding: 1rem;
+}
+
+footer a {
+    text-decoration: none;
+    color: #264653;
+}
+
+footer li {
+    list-style: none;
+    margin: 6px;
+}
+
+div.companyAddress p {
+    margin-bottom: 6px;
+}
+
+div.developerLink {
+    color: #264653;
+}
+
+div.developerLink a {
+    text-decoration: underline;
+    color: #264653;
+}

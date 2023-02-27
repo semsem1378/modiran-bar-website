@@ -1,0 +1,520 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: irankharazmi;
+}
+
+@font-face {
+  font-family: irankharazmi;
+  src: url("../fonts/fonts/IRAN_Kharazmi/IRAN Kharazmi.ttf");
+}
+
+@media only screen and (max-width: 1200px) {
+  h1 {
+    font-size: 3.5rem !important;
+  }
+  h2 {
+    font-size: 2.5rem !important;
+  }
+  div.container {
+    max-width: 95% !important;
+  }
+  div.gridItems div.columns {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr !important;
+        grid-template-columns: 1fr !important;
+  }
+  .coll {
+    margin: .2rem !important;
+  }
+  .coll .card h4 {
+    font-size: 1.4rem !important;
+  }
+  .coll .card i {
+    font-size: 2rem !important;
+  }
+}
+
+@media only screen and (max-width: 860px) {
+  div.container {
+    padding: 0;
+  }
+  span.callNow a {
+    color: #e6e2d8 !important;
+  }
+  span.callNow i {
+    font-size: 3rem !important;
+  }
+  nav a.navItem {
+    margin: 1rem !important;
+  }
+  section.homePage {
+    height: -webkit-fit-content !important;
+    height: -moz-fit-content !important;
+    height: fit-content !important;
+  }
+  section.homePage div.backGround {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+  }
+  section.homePage div.backGround div.placeHolder {
+    display: none;
+  }
+  section.homePage div.backGround div.roadCard {
+    width: 100% !important;
+    height: 600px !important;
+  }
+  div.cover {
+    width: 100% !important;
+    position: relative !important;
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+  }
+}
+
+@media only screen and (max-width: 630px) {
+  nav > div.mobile_nav {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: absolute;
+    width: -webkit-fit-content !important;
+    width: -moz-fit-content !important;
+    width: fit-content !important;
+    height: -webkit-fit-content !important;
+    height: -moz-fit-content !important;
+    height: fit-content !important;
+    top: 24px;
+    left: 0;
+    z-index: 4;
+  }
+  nav > div.mobile_nav div.drawer_nav {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #264653;
+    padding: 1rem;
+    -webkit-transition: .5s;
+    transition: .5s;
+    max-height: 0;
+    overflow: hidden;
+  }
+  nav > div.mobile_nav .drawDown {
+    max-height: 1000px !important;
+  }
+  nav > div.mobile_nav .overflow {
+    padding: 0% !important;
+  }
+  nav > div.mobile_nav i#burgerBtn {
+    cursor: pointer;
+    color: white;
+    font-size: 2rem;
+  }
+  div.desktop_nav {
+    display: none !important;
+  }
+}
+
+@media only screen and (max-width: 495px) {
+  header {
+    height: 60px !important;
+  }
+  span.callNow {
+    display: none !important;
+  }
+  i#burgerBtn {
+    font-size: 1.4rem !important;
+  }
+  h1 {
+    font-size: 2.3rem !important;
+  }
+  h2 {
+    font-size: 1.6rem !important;
+  }
+  section.homePage div.backGround div.roadCard {
+    height: 400px !important;
+  }
+  div.cover {
+    background-color: #e6e2d8;
+  }
+  div.cover div.gridItems {
+    margin: 0 !important;
+  }
+  div.cover .coll .card .card-body {
+    padding: 8px;
+  }
+  div.cover .coll .card .card-body .i {
+    font-size: 3rem;
+  }
+  div.cover .coll .card .card-body h4 {
+    font-size: 1.3rem !important;
+  }
+  div.cover .coll .card .card-body h6 {
+    font-size: 1rem !important;
+  }
+}
+
+@media only screen and (max-width: 338px) {
+  h1 {
+    font-size: 1.8rem !important;
+  }
+  h2 {
+    font-size: 1.6rem !important;
+  }
+}
+
+body {
+  width: 100%;
+}
+
+header {
+  background-color: #68190b;
+  height: 80px;
+}
+
+header .container {
+  height: 100%;
+}
+
+nav {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav div {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  -ms-flex-direction: row;
+      flex-direction: row;
+}
+
+nav div.mobile_nav {
+  overflow: hidden !important;
+  height: 0;
+  width: 0;
+}
+
+nav img {
+  display: inline-block;
+  height: 100%;
+}
+
+nav a.navItem {
+  margin: 2rem;
+  color: white;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+section.homePage {
+  width: 100%;
+  height: 790px;
+}
+
+section.homePage div.backGround {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+section.homePage div.backGround div.roadCard {
+  width: 80%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+section.homePage div.backGround div.roadCard .roadCard-title,
+section.homePage div.backGround div.roadCard .roadCard-text {
+  position: absolute;
+  z-index: 3 !important;
+  right: 10%;
+}
+
+section.homePage div.backGround div.roadCard .roadCard-title h2 {
+  font-size: 3.5rem;
+  color: white;
+  position: relative;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  z-index: 3;
+}
+
+section.homePage div.backGround div.roadCard .roadCard-text {
+  width: auto;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 1rem;
+  color: white;
+  z-index: 3;
+}
+
+section.homePage div.backGround div.roadCard .roadCard-text h1 {
+  display: inline-block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  text-shadow: 8px 0 0.5rem #68190b;
+  font-size: 4.3rem;
+}
+
+section.homePage div.backGround div.roadCard .roadCard-text p {
+  font-size: 1.1rem;
+}
+
+section.homePage div.backGround div.roadCard .rtruck {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: inline-block;
+  width: auto;
+  height: 100% !important;
+  opacity: 0;
+}
+
+section.homePage div.backGround div.roadCard .opcHide {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transition-timing-function: linear;
+          transition-timing-function: linear;
+  opacity: 1;
+}
+
+section.homePage div.backGround div.placeHolder {
+  width: 40%;
+  height: 100%;
+}
+
+section.homePage div.backGround div.cover {
+  position: absolute;
+  left: 0 !important;
+  top: 0;
+  height: 100%;
+  width: 65%;
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(60%, #e6e2d8), to(transparent));
+  background-image: linear-gradient(90deg, #e6e2d8 60%, transparent);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+}
+
+section.homePage div.backGround div.cover div.gridItems {
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.homePage div.backGround div.cover div.gridItems .columns {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+section.homePage div.backGround div.cover .coll {
+  margin: .5rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.homePage div.backGround div.cover .coll .card {
+  color: #68190b;
+  background-color: transparent;
+  border-color: transparent;
+}
+
+section.homePage div.backGround div.cover .coll .card h4,
+section.homePage div.backGround div.cover .coll .card h6 {
+  text-align: center;
+}
+
+section.homePage div.backGround div.cover .coll .card .card-text {
+  display: none;
+}
+
+section.homePage div.backGround div.cover .coll .card i {
+  font-size: 4rem;
+  margin: 10px;
+}
+
+section.homePage div.backGround div.cover .coll .card :hover {
+  cursor: pointer;
+  background-color: #4f5e93;
+  background-color: #2646531c;
+}
+
+section.homePage div.backGround div.cover .coll .card-body {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.activeCard {
+  border: 1px ridge #4f5e93 !important;
+}
+
+.backcolor {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+  width: calc(100% + 50px);
+  height: 100%;
+  background-image: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(80%, #68190b), to(transparent));
+  background-image: linear-gradient(90deg, transparent, #68190b 80%, transparent);
+  z-index: 2;
+}
+
+span.callNow {
+  position: fixed;
+  display: inline-block;
+  bottom: 2rem;
+  right: 2rem;
+  cursor: pointer;
+}
+
+span.callNow a {
+  text-decoration: none;
+}
+
+span.callNow i {
+  color: #773023;
+  font-size: 5rem;
+}
+
+span.callNow i p {
+  background-color: white;
+  border-radius: 1rem;
+  font-size: 0rem;
+  -webkit-transition: .5s;
+  transition: .5s;
+  color: #4f5e93;
+}
+
+span.callNow i p strong {
+  font-size: inherit;
+  text-decoration: none;
+  color: #68190b;
+}
+
+@-webkit-keyframes sideMove {
+  from {
+    -webkit-transform: translateX(2rem);
+            transform: translateX(2rem);
+    opacity: 0.5;
+  }
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes sideMove {
+  from {
+    -webkit-transform: translateX(2rem);
+            transform: translateX(2rem);
+    opacity: 0.5;
+  }
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+/*# sourceMappingURL=main.css.map */

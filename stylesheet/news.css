@@ -1,0 +1,114 @@
+@media only screen and (max-width: 470px) {
+  section.newsStand .card-deck .card {
+    padding: 0 !important;
+  }
+  section.newsStand .card-deck img,
+  section.newsStand .card-deck video {
+    text-align: center;
+    max-width: 80% !important;
+  }
+  section.newsStand .card-deck .card-body {
+    width: 70%;
+    margin: auto !important;
+  }
+  section.newsStand .card-deck .card-body p {
+    text-align: justify;
+  }
+}
+
+section.newsStand {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+section.newsStand .card-deck {
+  height: 470px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #e6e2d8;
+}
+
+section.newsStand .card-deck .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem;
+  background-color: white;
+  color: #68190b;
+  margin: 1rem;
+  width: 450px !important;
+}
+
+section.newsStand .card-deck .card p {
+  color: black;
+}
+
+section.newsStand .card-deck .card .card-body {
+  text-align: justify;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+section.newsStand .card-deck .card img {
+  display: inline-block;
+  height: 220px;
+  width: auto;
+  max-width: 90%;
+}
+
+section.newsStand .card-deck .card video {
+  height: 220px;
+  width: auto;
+  max-width: 100%;
+}
+
+section.newsStand div.handlers {
+  position: absolute;
+  bottom: 0%;
+  left: 50%;
+  -webkit-transform: translate(-50%, 50%);
+          transform: translate(-50%, 50%);
+  color: #68190b;
+}
+
+section.newsStand div.handlers i {
+  border-radius: 5px;
+  font-size: 1.5rem;
+  margin: 0.5rem;
+  color: #68190b;
+  padding: 1rem;
+  border: 1px #68190b solid;
+  cursor: pointer;
+}
+/*# sourceMappingURL=news.css.map */

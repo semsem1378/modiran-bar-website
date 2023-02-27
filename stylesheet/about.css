@@ -1,0 +1,55 @@
+@media only screen and (max-width: 495px) {
+  section.about div.container {
+    width: 100%;
+    max-width: 100% !important;
+  }
+  section.about div.container div.about {
+    padding: .5rem !important;
+  }
+  section.about div.container div.about p {
+    width: 95%;
+  }
+}
+
+section.about {
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: #86473c;
+}
+
+section.about div.about {
+  background-color: #e6e2d8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 100%;
+}
+
+section.about div.about p {
+  font-family: irankharazmi !important;
+  width: 80%;
+  text-justify: auto;
+  text-align: justify;
+  color: black;
+}
+
+section.about div.about h3 {
+  color: #68190b;
+  text-shadow: 8px 0 0.5rem #e6e2d8;
+}
+/*# sourceMappingURL=about.css.map */

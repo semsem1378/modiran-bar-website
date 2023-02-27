@@ -1,0 +1,196 @@
+@media only screen and (max-width: 1100px) {
+  div.howToOrder-body div.howToOrder-showItems {
+    width: 80%;
+  }
+  div.howToOrder-body div.howToOrder-images {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 495px) {
+  section#howToOrder div.container {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+  div.howToOrder-body div.howToOrder-showItems {
+    width: 100%;
+    margin: 0 !important;
+    border-radius: 0;
+  }
+  span.circleNum {
+    width: 2rem !important;
+    height: 2rem !important;
+  }
+  span.circleNum div.iconNum {
+    border-width: 2px !important;
+    font-size: 1rem !important;
+  }
+}
+
+section.howToOrder {
+  height: auto;
+  width: 100%;
+}
+
+section.howToOrder video.videoPlayer {
+  width: 100%;
+  height: auto;
+}
+
+section.howToOrder .container {
+  height: 100%;
+}
+
+section.howToOrder .container h2 {
+  background-color: #68190b;
+  padding: 1rem;
+  color: white;
+  text-align: center;
+}
+
+.howToOrder-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: #86473c;
+  background-color: #e6e2d8;
+}
+
+.howToOrder-body .howToOrder-showItems {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 45%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: #e6e2d8;
+  background-color: white;
+  border-radius: 1rem;
+}
+
+.howToOrder-body .howToOrder-showItems .showItem {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 1rem;
+  width: 90%;
+  height: auto;
+}
+
+.howToOrder-body .howToOrder-showItems .showItem div.progressBar {
+  height: 3px;
+  width: 0%;
+  background-color: #68190b;
+  position: absolute;
+  bottom: 2px;
+  right: 0;
+  -webkit-transition: .6s;
+  transition: .6s;
+  border-radius: 100%;
+}
+
+.howToOrder-body .howToOrder-showItems .showItem span.circleNum {
+  position: relative;
+  width: 4rem;
+  height: 4rem;
+}
+
+.howToOrder-body .howToOrder-showItems .showItem span.circleNum div.iconNum {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #264653;
+  font-size: 3rem;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  -webkit-transform: translateX(50%);
+          transform: translateX(50%);
+  opacity: .5;
+  border-radius: 100%;
+  border: 5px solid #264653;
+  cursor: pointer;
+}
+
+.howToOrder-body .howToOrder-showItems .showItem div.itemInfo {
+  opacity: 0.5;
+  width: 90%;
+  height: 100%;
+}
+
+.howToOrder-body div.howToOrder-images {
+  width: 45%;
+  height: 500px;
+}
+
+.howToOrder-body div.howToOrder-images img {
+  display: none;
+  width: auto;
+  max-width: 100%;
+  height: 100%;
+}
+
+.howToOrder-body div.howToOrder-images img.show {
+  display: block;
+}
+
+.selected-icon {
+  -webkit-transition: .5s;
+  transition: .5s;
+  -webkit-animation: colorfill .5s forwards;
+          animation: colorfill .5s forwards;
+  opacity: .9 !important;
+  border: 5px solid #68190b !important;
+}
+
+@-webkit-keyframes colorfill {
+  0% {
+    color: #264653;
+  }
+  100% {
+    color: #68190b;
+  }
+}
+
+@keyframes colorfill {
+  0% {
+    color: #264653;
+  }
+  100% {
+    color: #68190b;
+  }
+}
+/*# sourceMappingURL=howToOrder.css.map */

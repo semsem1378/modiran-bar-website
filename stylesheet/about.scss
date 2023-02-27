@@ -1,0 +1,49 @@
+$primary-color: #e6e2d8 !default;
+$accent-color: #e6e2d8 !default;
+$secondar-color: #68190b;
+$card: #4f5e93;
+$card-second: #264653;
+@media only screen and (max-width: 495px) {
+    section.about {
+        div.container {
+            width: 100%;
+            max-width: 100% !important;
+            div.about {
+                padding: .5rem !important;
+                p {
+                    width: 95%;
+                }
+            }
+        }
+    }
+}
+
+@function tint-color($color, $weight) {
+    @return mix(white, $color, $weight);
+}
+
+section.about {
+    width: 100%;
+    height: fit-content;
+    background-color: tint-color($secondar-color, 20%);
+    div.about {
+        background-color: $primary-color;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: fit-content;
+        width: 100%;
+        p {
+            font-family: irankharazmi !important;
+            width: 80%;
+            text-justify: auto;
+            text-align: justify;
+            color: black;
+        }
+        h3 {
+            color: $secondar-color;
+            text-shadow: 8px 0 0.5rem $primary-color;
+        }
+    }
+}

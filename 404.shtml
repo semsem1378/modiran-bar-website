@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head><meta charset="utf-8">
+    
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>خطا</title>
+    <style>
+        body{
+            background-color: azure;
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        div.ErrCenter{
+            text-align: center;
+            background-color: rgb(255, 76, 44);
+            padding: 2rem;
+        }
+        i{
+            font-size: 2rem;
+            color: white;
+        }
+
+    </style>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
+</head>
+<body>
+<!--#echo var="REQUEST_URI" -->
+    <div class="ErrCenter">
+        <h2>!!این صفحه پیدا نشد</h2>
+        <i class="far fa-meh-rolling-eyes"></i>
+        <div><a href="modiranbar.com">بازگشت</a></div>
+    </div>
+</body>
+</html>
